@@ -21,10 +21,35 @@ h1 {
     margin: 0px;
 }
 
+nav{
+    position: relative;
+}
+
+.front-image {
+    position: relative;
+    max-height: 600px;
+    overflow: hidden;
+}
+
+.front-image img {
+    position: relative;
+}
+
+.front-image h1 {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(15, 15, 15, 0.5);
+}
+
 #site-logo{
     font-size: 1.5em;
     font-style: normal;
     font-weight: 600;
+    position: relative;
+    width: calc(100% - 200px);
+    left: 200px;
 }
 
 article {
@@ -36,7 +61,8 @@ article {
 }
 
 article > * {
-    max-width: 90vw;
+    max-width: 1600px;
+    width: calc(100vw - 4rem);
 }
 
 /*

@@ -1,0 +1,14 @@
+{
+  "name": "less-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "lessc styles.less styles.css"
+  },
+  "author": "bang.ly.duy",
+  "license": "ISC",
+  "devDependencies": {
+    "less": "^4.1.1"
+  }
+}

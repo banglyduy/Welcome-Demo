@@ -1,0 +1,80 @@
+@primaryColor: #fff;
+@secondaryColor: #151515;
+@pageGap: 15px;
+
+body {
+    font-size: 20px;
+    background-color: @secondaryColor;
+    color: @primaryColor;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    padding: 0 @pageGap;
+    font-style: italic;
+    font-size: 2em;
+}
+
+[article-title] {
+    padding: @pageGap;
+    margin: 0px;
+}
+
+#site-logo{
+    font-size: 1.5em;
+    font-style: normal;
+    font-weight: 600;
+}
+
+article {
+    display: flex;
+    flex-flow: column;
+    flex: 1 60%;
+    align-items: center;
+    padding-bottom: 50px;
+    >* {
+        color: @primaryColor;
+        max-width: 90vw;
+    }
+
+    .summary > p {
+        font-style: italic;
+    }
+}
+
+div.gallery{
+    display: grid;
+    row-gap: 15px;
+    column-gap: 15px;
+    grid-template-columns: auto auto auto;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    @pageGap: 10px;
+
+    div.gallery{
+        row-gap: @pageGap;
+        column-gap: @pageGap;
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    @pageGap: 5px;
+
+    div.gallery{
+        display: flex;
+        flex-direction: column;
+    }
+}
